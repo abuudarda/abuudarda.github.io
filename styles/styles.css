@@ -437,6 +437,7 @@ section {
   font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  margin-left: 2rem;
 }
 .portfolios .portfolio-item .hover-items .icons {
   display: flex;
