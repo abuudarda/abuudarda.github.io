@@ -65,7 +65,19 @@ section {
   top: 0;
   padding: 3rem 18rem;
 }
+ul {
+  list-style-type: circle; /* Change the bullet style here */
+}
 
+/* Optional styles for list items */
+li {
+  margin-bottom: 0.5rem; /* Add spacing between list items */
+}
+li::before {
+  content: "•"; /* Insert content that looks like bullets */
+  padding-right: 8px;
+  /* color: blue; Or a color you prefer */
+}
 .container {
   display: none;
   transform: translateY(-100%) scale(0);
@@ -230,9 +242,16 @@ section {
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
 .about-container .right-about .about-item .abt-text {
-  padding: 1.5rem;
+  padding: .5rem;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.about-container .right-about .about-item .abt-text i{
+  font-size: 4rem;
+  color: var(--color-white);
+  margin: 2.75rem;
+  
 }
 .about-container .right-about .about-item .abt-text .large-text {
   font-size: 3rem;
@@ -272,6 +291,7 @@ section {
 .about-stats {
   padding-bottom: 4rem;
 }
+
 .about-stats .progress-bars {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -348,7 +368,7 @@ section {
 /*Timeline*/
 .timeline {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
 }
@@ -395,6 +415,12 @@ section {
 .timeline .timeline-item p {
   color: var(--color-grey-2);
 }
+.timeline .timeline-item ul {
+  color: var(--color-grey-2);
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
 
 .port-text {
   padding: 2rem 0;
