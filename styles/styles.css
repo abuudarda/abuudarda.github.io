@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #27AE60;
+  --color-secondary: #2752ae;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -476,11 +476,41 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  margin-bottom: 5rem;
   margin-top: 3rem;
 }
+.blogs .btn {
+  position: relative;
+  background-color: var(--color-grey-6);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.blogs .btn:hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
+}
+
+.blogs .btn .blog-text h4 {
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.blogs .btn .blog-text h4:hover {
+  color: var(--color-secondary);
+}
+
+
+
+
 .blogs .blog {
   position: relative;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-grey-6);
   border-radius: 5px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-in-out;
