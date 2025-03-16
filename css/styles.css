@@ -528,6 +528,7 @@ body {
 p {
     font-size      : inherit;
     text-rendering : optimizeLegibility;
+    text-align: justify;
 }
 
 a {
@@ -548,6 +549,7 @@ pre {
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
     margin  : 0;
     padding : 0;
+    text-align: justify;
 }
 
 input[type="email"],
@@ -3782,7 +3784,7 @@ img.u-pull-left {
  * ## modal popup
  * ------------------------------------------------------------------- */
 .modal-popup {
-    max-width        : 680px;
+    max-width        : 980px;
     background-color : white;
     font-size        : calc(var(--text-size) * 0.9447);
     line-height      : var(--vspace-0_875);
@@ -3847,20 +3849,76 @@ img.u-pull-left {
 }
 
 .modal-popup__details {
-    background-color : rgba(0, 0, 0, 0.3);
-    font-size        : var(--text-xs);
-    line-height      : var(--vspace-1_25);
-    color            : white;
-    padding          : 0 1.2rem;
-    position         : absolute;
-    top              : var(--vspace-1);
-    left             : var(--vspace-1);
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    /* display: inline-block; */
+    padding: 0.5rem 1rem;
+    background-color: var(--color-1);
+    color: white;
+    /* text-decoration: none; */
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    z-index: 1;
 }
 
 .modal-popup__details:focus,
 .modal-popup__details:hover {
     background-color : var(--color-body);
     color            : white;
+}
+
+/* Modal popup styling */
+.modal-popup__content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.modal-popup__image {
+    flex: 0 0 40%;  /* Takes 40% of the container width */
+    max-width: 40%;
+}
+
+.modal-popup__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.modal-popup__desc {
+    flex: 1;  /* Takes the remaining space */
+    padding-top: 0;
+}
+
+.modal-popup__details {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-1, #333);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-popup__details:hover {
+    background-color: var(--color-2, #555);
+}
+
+/* Make it responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .modal-popup__content {
+        flex-direction: column;
+    }
+    
+    .modal-popup__image {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
 }
 
 /* ------------------------------------------------------------------- 
