@@ -2084,8 +2084,9 @@ input[type="button"].btn--primary:hover {
  */
 .btn.u-fullwidth,
 button.u-fullwidth {
-    width        : 100%;
-    margin-right : 0;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .btn--small,
