@@ -131,7 +131,7 @@
         camera.lookAt(scene.position);
 
         // Animate particles (e.g., slow rotation or individual movement)
-        // particles.rotation.x = time * 0.2;
+        particles.rotation.x = time * 0.2;
         particles.rotation.y = time * 0.3;
         
         // If you want individual particle movement (more complex, can impact performance)
