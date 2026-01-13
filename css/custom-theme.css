@@ -6,19 +6,6 @@ body {
     color: #e0e0e0; /* Light grey for text */
 }
 
-#bg-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Behind all other content */
-}
-
-.s-pagewrap {
-    background-color: transparent; /* Allow canvas to show through */
-}
-
 /* --- Header --- */
 .s-header {
     background-color: rgba(10, 10, 20, 0.8); /* Slightly transparent dark */
