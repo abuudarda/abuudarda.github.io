@@ -195,7 +195,8 @@
                                                 Deep Learning, NLP, Multimodal AI (Text, Image, Audio), LoRA, RLHF
                                             </p> -->
                                             <ul>
-                                                <li>RAG Systems, Agentic workflows</li>
+                                                <li>RAG Systems,  Multimodal AI</li>
+                                                <li>Agentic workflows, Multi-Agent Co-rdination</li>
                                                 <li>Fine-tuning LLMs (LoRA, QLoRA, PEFT)</li>
                                                 <li>Prompt Engineering & Optimization</li>
                                             </ul>
@@ -227,36 +228,8 @@
                                             </p>
                                         </div>
                                     </div> <!-- list-expertise__item -->
-                                    <!-- <div class="grid-list-items__item list-items__item">
-                                        <div class="grid-list-items__title list-items__item-header">
-                                            <h3 class="list-items__item-title">Frontend</h3>
-                                        </div>
-                                        <div class="grid-list-items__text list-items__item-text">
-                                            <p>
-                                                React.js, JavaScript
-                                            </p>
-                                        </div>
-                                    </div> list-expertise__item -->
-                                    <!-- <div class="grid-list-items__item list-items__item">
-                                        <div class="grid-list-items__title list-items__item-header">
-                                            <h3 class="list-items__item-title">Databases</h3>
-                                        </div>
-                                        <div class="grid-list-items__text list-items__item-text">
-                                            <p>
-                                                PostgreSQL, MongoDB, GraphQL, Vector Databases (e.g., Pinecone, FAISS)
-                                            </p>
-                                        </div> -->
-                                    <!-- </div> list-expertise__item -->
-                                    <!-- <div class="grid-list-items__item list-items__item">
-                                        <div class="grid-list-items__title list-items__item-header">
-                                            <h3 class="list-items__item-title">Programming Languages</h3>
-                                        </div>
-                                        <div class="grid-list-items__text list-items__item-text">
-                                            <p>
-                                                Python, C++, Java
-                                            </p>
-                                        </div>
-                                    </div> list-expertise__item -->
+                                    
+                                    </div>
                                     <div class="grid-list-items__item list-items__item">
                                         <div class="grid-list-items__title list-items__item-header">
                                             <h3 class="list-items__item-title">Tools & Frameworks</h3>
@@ -282,11 +255,54 @@
 
                 <div class="row about-timelines" data-animate-block>
 
-                    <div class="column lg-6 tab-12">
+                    <div class="column lg-12 tab-12">
 
-                        <h2 class="text-pretitle" data-animate-el>
+                        <h5 style="text-align: center; font-size: 4em;" data-animate-el>
+                            Education
+                        </h5>
+
+                        <div class="timeline" data-animate-el>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">CUNY School of Professional Studies</h4>
+                                    <h5 class="timeline__meta">Master of Science in Generative AI</h5>
+                                    <p class="timeline__timeframe">2026</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <p><strong>Focus:</strong> Large Language Models, RAG Systems, Transformers, Intelligent Agents</p>
+                                </div>
+                            </div>
+                            <div class="timeline__block">
+                                <div class="timeline__bullet"></div>
+                                <div class="timeline__header">
+                                    <h4 class="timeline__title">BRAC University</h4>
+                                    <h5 class="timeline__meta">Bachelor of Science in Computer Science</h5>
+                                    <p class="timeline__timeframe">2020 - 2024</p>
+                                </div>
+                                <div class="timeline__desc">
+                                    <h5>Thesis: "Synthetic Population Simulation Using US Census Data"</h5>
+                                    <p>An open-source population simulator to provide projections, forecasts, and models of diverse population behaviors under specific stimuli, such as disease outbreaks, natural disasters, and significant congestion.</p>
+                                    
+                                    <ul>
+                                        <li><a href="https://github.com/abuudarda/synthetic-population-simulation">GitHub</a></li>
+                                        <li><a href="https://drive.google.com/file/d/1dNyRXCQmZBIdEmsxOONc-qxuweVLrUKD">Paper</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                            
+    
+                        </div> <!-- end timeline -->
+                        
+                    </div> <!-- end column -->
+
+                    <div class="column lg-12 tab-12">
+
+                        <h5 style="text-align: center; font-size: 4em;" data-animate-el>
                             Experience
-                        </h2>
+                        </h5>
+
 
                         <div class="timeline" data-animate-el>
 
@@ -299,8 +315,10 @@
                                 </div>
                                 <div class="timeline__desc">
                                     <ul>
-                                        <li>Led development of B2B/B2C projects, managing end-to-end implementation to deliver high-quality results on time.</li>
-                                        <li>Managed client interactions to gather requirements, provide updates, and ensure alignment with client expectations.</li>
+                                        <li>Engineered a <strong>Multimodal AI</strong> agent capable of complex video analysis, enabling autonomous insight extraction for visual content tasks.</li>
+                                        <li><strong>Fine-tuned Flux image generation models</strong> and trained multiple LoRA adapters to ensure scene and character consistency, directly addressing visual content quality.</li>
+                                        <li>Designed and deployed agentic workflows using LangGraph for context-aware content generation, facilitating autonomous problem-solving.</li>
+                                        <li>Collaborated with stakeholders to align AI solutions with client expectations, ensuring scalable deployment of production-grade features.</li>
                                     </ul>
                                 </div>
                                 <a href="#works" class="btn btn--stroke u-fullwidth smoothscroll">View My Works</a>
@@ -315,8 +333,11 @@
                                 </div>
                                 <div class="timeline__desc">
                                     <ul>
-                                        <li>Built and managed multiple B2B and POC projects, overseeing the development process.</li>
-                                        <li>Ensured project success by coordinating with stakeholders and delivering high-quality solutions within deadlines.</li>
+                                        <li>Leveraged Large Language Models to develop a chatbot to answer user queries from different knowledge-bases.</li>
+                                        <li>Optimized Information Retrieval (IR) pipelines using LangChain & LangGraph to manage dynamic data retrieval, reducing system latency by 40%. </li>
+                                        <li>Implemented model performance evaluation metrics, enabling data-driven assessment of response quality.</li>
+                                        <li>Integrated multi-turn logic to handle ambiguous user queries, improving search intent resolution.</li>
+                                        <li>Developed a document classification engine achieving 95% accuracy in sorting unstructured data, automating ingestion pipelines to remove manual verification.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -339,38 +360,6 @@
     
                         </div> <!-- end timeline -->
 
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">BRAC University</h3>
-                                    <h5 class="timeline__meta">Bachelor of Science in Computer Science</h5>
-                                    <p class="timeline__timeframe">November 2023</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <h5>Thesis: "Synthetic Population Simulation Using US Census Data"</h5>
-                                    <p>An open-source population simulator to provide projections, forecasts, and models of diverse population behaviors under specific stimuli, such as disease outbreaks, natural disasters, and significant congestion.</p>
-                                    
-                                    <ul>
-                                        <li><a href="https://github.com/abuudarda/synthetic-population-simulation">GitHub</a></li>
-                                        <li><a href="https://drive.google.com/file/d/1dNyRXCQmZBIdEmsxOONc-qxuweVLrUKD">Paper</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-    
-                            
-    
-                        </div> <!-- end timeline -->
-                        
                     </div> <!-- end column -->
 
 
@@ -452,7 +441,7 @@
                                             Application
                                         </div>
                                         <div class="folio-list__item-title">
-                                            Chatbot Boilerplate
+                                            Chatbot - Nikles
                                         </div>
                                     </div>
                                 </a>
@@ -543,6 +532,27 @@
                             <li class="folio-list__item column" data-animate-el>
                                 <a class="folio-list__item-link" href="#modal-07">
                                     <div class="folio-list__item-pic">
+                                        <img src="https://media1.tenor.com/m/eRi7jJSUUrUAAAAd/cat-kung-fu.gif"
+                                             srcset="https://media1.tenor.com/m/eRi7jJSUUrUAAAAd/cat-kung-fu.gif 1x, https://media1.tenor.com/m/eRi7jJSUUrUAAAAd/cat-kung-fu.gif 2x"  alt="">
+                                             
+                                    </div>
+                                    
+                                    <div class="folio-list__item-text">
+                                        <div class="folio-list__item-cat">
+                                            Application
+                                        </div>
+                                        <div class="folio-list__item-title">
+                                            Text HUmanizer
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="folio-list__proj-link" href="#" title="project link">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                                </a>
+                            </li> <!--end folio-list__item -->
+                            <li class="folio-list__item column" data-animate-el>
+                                <a class="folio-list__item-link" href="#modal-08">
+                                    <div class="folio-list__item-pic">
                                         <img src="images/portfolio/Dexter.png"
                                              srcset="images/portfolio/Dexter.png 1x, images/portfolio/Dexter.png 2x"  alt="">
                                     </div>
@@ -562,7 +572,7 @@
                             </li> <!--end folio-list__item -->
 
                             <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-08">
+                                <a class="folio-list__item-link" href="#modal-09">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/lamp.jpg"
                                              srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x"  alt="">
@@ -584,7 +594,7 @@
 
 
                             <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-09">
+                                <a class="folio-list__item-link" href="#modal-10">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/sanddunes.jpg"
                                              srcset="images/portfolio/sanddunes.jpg 1x, images/portfolio/sanddunes@2x.jpg 2x"  alt="">
@@ -605,7 +615,7 @@
                             </li> <!--end folio-list__item -->
 
                             <li class="folio-list__item column" data-animate-el>
-                                <a class="folio-list__item-link" href="#modal-10">
+                                <a class="folio-list__item-link" href="#modal-11">
                                     <div class="folio-list__item-pic">
                                         <img src="images/portfolio/lamp.jpg"
                                              srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x"  alt="">
@@ -639,6 +649,9 @@
                                 </div>
                             
                                 <div class="modal-popup__desc">
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                        <a href="https://www.upendnow.com/" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">Try IT</a>
+                                    </div> <!-- end s-about__content-btn -->
                                     <h5>UpendNow</h5>
                                     <p>A Digital-content and Film-making Co-pilot. It creates film scripts and dialogues based on user criteria, generates AI-based scene images and demo videos, and analyzes video content to extract themes and details.</p>
                                     <p><strong>Technologies Used:</strong> Serverless, Nodejs, AWS</p>
@@ -654,7 +667,9 @@
                                         <li>Computer Vision</li>
                                         <li>LLMs</li>
                                     </ul>
-                                    <!-- <a href="https://www.behance.net/" class="modal-popup__details">Project link</a> -->
+                                    <!-- <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://www.behance.net/" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn --> -->
                                 </div>
                             </div>
                         </div>
@@ -682,7 +697,9 @@
                                         <li>AWS</li>
                                         <li>LLMs</li>
                                     </ul>
-                                    <!-- <a href="https://www.behance.net/" class="modal-popup__details">Project link</a> -->
+                                    <!-- <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://www.behance.net/" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn --> -->
                                 </div>
                             </div>
                         </div>
@@ -697,13 +714,18 @@
                                 </div>
                             
                                 <div class="modal-popup__desc">
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                        <a href="https://www.nikles.com/" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">Try IT</a>
+                                    </div> <!-- end s-about__content-btn -->
                                     <h5>Chatbot</h5>
-                                    <p>Boilerplate of chatbots that supports creating different chatbots for different RAGs. Chatbots are customizable according to client needs.</p>
+                                    <p>context-aware chatbot capable of integrating multiple knowledge sources using LangChain and Pinecone</p>
                                     <p><strong>Technologies Used:</strong> AWS, FastAPI, LLMs</p>
                                     <ul class="modal-popup__cat">
                                         <li>LLMs</li>
                                     </ul>
-                                    <!-- <a href="https://www.behance.net/" class="modal-popup__details">Project link</a> -->
+                                    <!-- <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://www.behance.net/" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn --> -->
                                 </div>
                             </div>
                         </div>
@@ -723,7 +745,12 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/Facial-Expression-Detection" class="modal-popup__details">Github link</a>
+                                    <!-- <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/Facial-Expression-Detection" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn --> -->
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                        <a href="https://github.com/abuudarda/Facial-Expression-Detection" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                                    </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
@@ -744,7 +771,9 @@
                                     <ul class="modal-popup__cat">
                                         <li>Graph Theory</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/M-Link-a-link-clusteringmemetic-algorithm-for-overlapping-community-detection" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/M-Link-a-link-clusteringmemetic-algorithm-for-overlapping-community-detection" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
@@ -764,13 +793,34 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/Glaucoma-detection-vgg16-vs-resnet50" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/Glaucoma-detection-vgg16-vs-resnet50" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
                     </div> <!-- end modal -->
 
                     <div id="modal-07" hidden>
+                        <div class="modal-popup">
+                            <div class="modal-popup__content">
+                                <div class="modal-popup__image">
+                                    <img src="images/portfolio/lamp.jpg" alt="Project Image">
+                                </div>
+                            
+                                <div class="modal-popup__desc">
+                                    <h5>
+                                        Text Humanizer</h5>
+                                    <p>Application to make AI-generated text sound more natural and human-like.</p>
+                                    <ul class="modal-popup__cat">
+                                        <li>Application</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- end modal -->
+
+                    <div id="modal-08" hidden>
                         <div class="modal-popup">
                             <div class="modal-popup__content">
                                 <div class="modal-popup__image">
@@ -784,13 +834,15 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/Inmoresentum/InteractiveQuizApplication" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/Inmoresentum/InteractiveQuizApplication" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-08" hidden>
+                    <div id="modal-09" hidden>
                         <div class="modal-popup">
                             <div class="modal-popup__content">
                                 <div class="modal-popup__image">
@@ -804,13 +856,15 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/django-ecommerce" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/django-ecommerce" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-09" hidden>
+                    <div id="modal-10" hidden>
                         <div class="modal-popup">
                             <div class="modal-popup__content">
                                 <div class="modal-popup__image">
@@ -824,13 +878,15 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/Employee-Management-System" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/Employee-Management-System" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
                     </div> <!-- end modal -->
 
-                    <div id="modal-10" hidden>
+                    <div id="modal-11" hidden>
                         <div class="modal-popup">
                             <div class="modal-popup__content">
                                 <div class="modal-popup__image">
@@ -844,7 +900,9 @@
                                     <ul class="modal-popup__cat">
                                         <li>CNN</li>
                                     </ul>
-                                    <a href="https://github.com/abuudarda/Hospital-Management-System" class="modal-popup__details">Github link</a>
+                                    <div class="s-expertise__content-btn grid-section-split__bottom">
+                                   <a href="https://github.com/abuudarda/Hospital-Management-System" class="btn btn--stroke u-fullwidth" style="white-space: normal; height: auto; padding-top: 8px; padding-bottom: 8px; line-height: 1.3;">GITHUB</a>
+                               </div> <!-- end s-about__content-btn -->
                                 </div>
                             </div>
                         </div>
