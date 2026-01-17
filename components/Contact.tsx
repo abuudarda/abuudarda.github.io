@@ -24,7 +24,6 @@ export const Contact: React.FC = () => {
 
         <div className="flex justify-center gap-6 mb-20">
             {SOCIALS.map(social => {
-                const IconComponent = Icons[social.icon === 'mail' ? 'Mail' : social.icon === 'github' ? 'Github' : social.icon === 'linkedin' ? 'Linkedin' : 'ExternalLink'] || Icons.ExternalLink;
                 return (
                     <a 
                         key={social.platform}
