@@ -81,7 +81,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: '1',
     role: "Software Engineer I (AI)",
-    company: "Brain Station 23 PLC",
+    company: "Brain Station 23",
     period: "Aug 2024 - Feb 2025",
     description: [
       "Engineered a Multimodal AI agent capable of complex video analysis, enabling autonomous insight extraction for visual content tasks.",
@@ -93,7 +93,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: '2',
     role: "Associate Software Engineer",
-    company: "Microsoft",
+    company: "Brainstation 23",
     period: "Jan 2024 - Aug 2024",
     description: [
       "Leveraged Large Language Models to develop a chatbot to answer user queries from different knowledge-bases.",
