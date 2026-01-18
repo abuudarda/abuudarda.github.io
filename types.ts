@@ -32,6 +32,23 @@ export interface ExpertiseItem {
   skills: string[];
 }
 
+export interface AchievementItem {
+  id: string;
+  title: string;
+  organization: string;
+  year?: string;
+  description?: string;
+  links?: { label: string; url: string }[];
+}
+
+export interface CertificationItem {
+  id: string;
+  title: string;
+  issuer: string;
+  date?: string;
+  link?: string;
+}
+
 export interface SocialLink {
   platform: string;
   url: string;
@@ -45,6 +62,8 @@ export enum SectionId {
   EDUCATION = 'education',
   EXPERIENCE = 'experience',
   PROJECTS = 'projects',
+  ACHIEVEMENTS = 'achievements',
+  CERTIFICATIONS = 'certifications',
   CONTACT = 'contact',
 }
 

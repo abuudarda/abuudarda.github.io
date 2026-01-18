@@ -1,4 +1,4 @@
-import { Experience, Project, SocialLink, EducationItem, ExpertiseItem } from './types';
+import { Experience, Project, SocialLink, EducationItem, ExpertiseItem, AchievementItem, CertificationItem } from './types';
 
 export const PERSONAL_INFO = {
   name: "Abu Darda",
@@ -81,7 +81,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: '1',
     role: "Software Engineer I (AI)",
-    company: "Brain Station 23",
+    company: "Brain Station 23 PLC",
     period: "Aug 2024 - Feb 2025",
     description: [
       "Engineered a Multimodal AI agent capable of complex video analysis, enabling autonomous insight extraction for visual content tasks.",
@@ -93,7 +93,7 @@ export const EXPERIENCE: Experience[] = [
   {
     id: '2',
     role: "Associate Software Engineer",
-    company: "Brainstation 23",
+    company: "Microsoft",
     period: "Jan 2024 - Aug 2024",
     description: [
       "Leveraged Large Language Models to develop a chatbot to answer user queries from different knowledge-bases.",
@@ -208,6 +208,68 @@ export const PROJECTS: Project[] = [
   }
 ];
 
+export const ACHIEVEMENTS: AchievementItem[] = [
+  {
+    id: 'ach1',
+    title: "Graduated with High Distinction",
+    organization: "BRAC University",
+    year: "2024",
+    description: "Awarded for exceptional academic performance during Bachelor of Science in Computer Science."
+  },
+  {
+    id: 'ach2',
+    title: "Champion, R@D!X2.0",
+    organization: "BRAC University",
+    year: "2022",
+    description: "Winner of the BUCC Week Programming Contest.",
+    links: [
+        { label: "Leaderboard", url: "https://www.hackerrank.com/contests/rdx2-0-bucc-week-programming-contest/leaderboard" }
+    ]
+  },
+  {
+    id: 'ach3',
+    title: "Champion, Intra-University Programming Contest",
+    organization: "BRAC University",
+    year: "2021",
+    description: "Secured 1st place in the university-wide competitive programming contest.",
+    links: [
+        { label: "Standings", url: "https://toph.co/c/bracu-intra-university-senior-contest/standings" }
+    ]
+  },
+  {
+    id: 'ach4',
+    title: "Competitive Programming Specialist",
+    organization: "Codeforces",
+    description: "Reached Specialist rank in Codeforces and solved more than 1500 problems across AtCoder, CodeChef, and CodinGame.",
+    links: [
+        { label: "Codeforces", url: "https://codeforces.com/profile/abuudarda" },
+        { label: "AtCoder", url: "https://atcoder.jp/users/abuudarda" },
+        { label: "CodeChef", url: "https://www.codechef.com/users/abuudarda" }
+    ]
+  }
+];
+
+export const CERTIFICATIONS: CertificationItem[] = [
+  {
+    id: 'cert1',
+    title: "Introduction to Generative AI",
+    issuer: "Google",
+    link: "https://www.cloudskillsboost.google/course_templates/536"
+  },
+  {
+    id: 'cert2',
+    title: "TensorFlow-Keras Bootcamp",
+    issuer: "OpenCV University",
+    link: "https://opencv.org/university/"
+  },
+  {
+    id: 'cert3',
+    title: "Introduction to Large Language Models",
+    issuer: "Google",
+    link: "https://www.cloudskillsboost.google/course_templates/539"
+  }
+];
+
 export const SOCIALS: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com/abuudarda", icon: "github" },
   { platform: "LinkedIn", url: "https://linkedin.com/in/darda-abu", icon: "linkedin" },
@@ -238,6 +300,12 @@ ${EXPERIENCE.map(e => `- ${e.role} at ${e.company} (${e.period}): ${e.descriptio
 
 Projects:
 ${PROJECTS.map(p => `- [${p.category.toUpperCase()}] ${p.title}: ${p.description} Tags: ${p.tags.join(', ')}`).join('\n')}
+
+Achievements:
+${ACHIEVEMENTS.map(a => `- ${a.title} at ${a.organization} (${a.year || 'N/A'}). ${a.description || ''}`).join('\n')}
+
+Certifications:
+${CERTIFICATIONS.map(c => `- ${c.title} by ${c.issuer}`).join('\n')}
 
 Socials: ${SOCIALS.map(s => s.platform).join(', ')}.
 

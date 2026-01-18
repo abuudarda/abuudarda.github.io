@@ -6,6 +6,8 @@ import { Expertise } from './components/Expertise';
 import { Education } from './components/Education';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
+import { Achievements } from './components/Achievements';
+import { Certifications } from './components/Certifications';
 import { Contact } from './components/Contact';
 import { AIChat } from './components/AIChat';
 
@@ -21,6 +23,8 @@ function App() {
       <Education />
       <Experience />
       <Projects />
+      <Achievements />
+      <Certifications />
       <Contact />
       <AIChat isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
     </main>
