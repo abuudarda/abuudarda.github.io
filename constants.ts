@@ -238,7 +238,7 @@ export const ACHIEVEMENTS: AchievementItem[] = [
   },
   {
     id: 'ach4',
-    title: "Competitive Programming Specialist",
+    title: "Competitive Programming ",
     organization: "Codeforces",
     description: "Reached Specialist rank in Codeforces and solved more than 1500 problems across AtCoder, CodeChef, and CodinGame.",
     links: [
