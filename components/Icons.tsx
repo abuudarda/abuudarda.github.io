@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ExternalLink, Menu, X, MessageSquare, Send, User, Bot, ArrowRight, ArrowUpRight, Trophy, Award, Star } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Menu, X, MessageSquare, Send, User, Bot, ArrowRight, ArrowUpRight, Trophy, Award, Star, Brain, ChevronDown } from 'lucide-react';
 
 export const Icons = {
   Github,
@@ -15,5 +15,7 @@ export const Icons = {
   ArrowUpRight,
   Trophy,
   Award,
-  Star
+  Star,
+  Brain,
+  ChevronDown
 };

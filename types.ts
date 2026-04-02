@@ -70,5 +70,6 @@ export enum SectionId {
 export interface ChatMessage {
   role: 'user' | 'model';
   text: string;
+  reasoning?: string;
   isError?: boolean;
 }
