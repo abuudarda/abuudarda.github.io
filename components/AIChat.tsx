@@ -128,12 +128,21 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
               let displayText = msg.text;
               let displayReasoning = msg.reasoning || '';
               
-              if (!displayReasoning && displayText.includes('<think>')) {
-                const thinkMatch = displayText.match(/<think>([\s\S]*?)(?:<\/think>|$)/);
-                if (thinkMatch) {
-                  displayReasoning = thinkMatch[1];
-                  displayText = displayText.replace(/<think>[\s\S]*?(?:<\/think>|$)/, '').trim();
+              if (displayText.includes('<think>')) {
+                const thinkRegex = /<think>([\s\S]*?)(?:<\/think>|$)/g;
+                const reasonings: string[] = displayReasoning ? [displayReasoning] : [];
+                
+                let match;
+                while ((match = thinkRegex.exec(displayText)) !== null) {
+                  if (match[1].trim()) {
+                    reasonings.push(match[1].trim());
+                  }
                 }
+                
+                if (reasonings.length > 0) {
+                  displayReasoning = reasonings.join('\n\n');
+                }
+                displayText = displayText.replace(thinkRegex, '').trim();
               }
 
               return (
