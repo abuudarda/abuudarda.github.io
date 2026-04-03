@@ -47,7 +47,7 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
         content: msg.text
       }));
 
-      const response = await fetch('https://cbg-io-git-main-abu-dardas-projects-912cd534.vercel.app/api/chat', {
+      const response = await fetch('https://cbg-io.vercel.app/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
