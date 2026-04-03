@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { ChatMessage } from '../types';
 import { Icons } from './Icons';
 
@@ -46,7 +47,7 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
         content: msg.text
       }));
 
-      const response = await fetch('https://cbg-io.vercel.app/api/chat', {
+      const response = await fetch('https://cbg-io-git-main-abu-dardas-projects-912cd534.vercel.app/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -168,7 +169,7 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
                           displayText
                         ) : (
                           <div className="prose prose-sm max-w-none prose-neutral">
-                            <Markdown>{displayText}</Markdown>
+                            <Markdown remarkPlugins={[remarkGfm]}>{displayText}</Markdown>
                           </div>
                         )}
                       </div>
