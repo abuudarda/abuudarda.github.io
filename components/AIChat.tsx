@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Markdown from 'react-markdown';
 import { ChatMessage } from '../types';
 import { Icons } from './Icons';
 
@@ -106,7 +107,7 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[90vw] max-w-sm h-[500px] bg-white rounded-2xl shadow-2xl border border-neutral-100 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-300">
+        <div className="fixed bottom-24 right-6 z-50 w-[90vw] max-w-xl h-[85vh] bg-white rounded-2xl shadow-2xl border border-neutral-100 flex flex-col overflow-hidden animate-in fade-in slide-in-from-bottom-10 duration-300">
           
           <div className="bg-neutral-50 border-b border-neutral-100 p-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -163,7 +164,13 @@ export const AIChat: React.FC<AIChatProps> = ({ isOpen, setIsOpen }) => {
                           ? 'bg-neutral-100 text-neutral-800 rounded-tr-none' 
                           : 'bg-white border border-neutral-100 shadow-sm text-neutral-600 rounded-tl-none'
                       }`}>
-                        {displayText}
+                        {msg.role === 'user' ? (
+                          displayText
+                        ) : (
+                          <div className="prose prose-sm max-w-none prose-neutral">
+                            <Markdown>{displayText}</Markdown>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
