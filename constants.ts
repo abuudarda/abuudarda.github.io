@@ -168,6 +168,14 @@ export const PROJECTS: Project[] = [
   // Personal
   {
     id: 'pers1',
+    title: "Syllabusync",
+    description: "An automated scheduling tool using Python and OCR technologies to parse key dates from PDF course syllabi, generating ICS files and integrating directly with the Google Calendar API to streamline academic planning.",
+    tags: ["NLP", "Agentic Workflows", "Google Calendar API"],
+    category: 'personal',
+    link: "https://pdf-to-ics.vercel.app/"
+  },
+  {
+    id: 'pers2',
     title: "Text Humanizer",
     description: "Application to make AI-generated text sound more natural and human-like using advanced prompt engineering.",
     tags: ["NLP", "Prompt Engineering"],
@@ -175,7 +183,7 @@ export const PROJECTS: Project[] = [
     link: "https://peaceful-horse-9a0b7d.netlify.app"
   },
   {
-    id: 'pers2',
+    id: 'pers3',
     title: "Interactive Quiz Application",
     description: "Java-Based web-app to host, create, and manage quizzes.",
     tags: ["Java", "Web App"],
@@ -183,7 +191,7 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/Inmoresentum/InteractiveQuizApplication"
   },
   {
-    id: 'pers3',
+    id: 'pers4',
     title: "Django E-commerce System",
     description: "Django web-app to store and sell products.",
     tags: ["Django", "Python", "E-commerce"],
@@ -191,7 +199,7 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/abuudarda/django-ecommerce"
   },
   {
-    id: 'pers4',
+    id: 'pers5',
     title: "Employee Management System",
     description: "Java-based employee management system for organizations.",
     tags: ["Java", "Management System"],
@@ -199,7 +207,7 @@ export const PROJECTS: Project[] = [
     github: "https://github.com/abuudarda/Employee-Management-System"
   },
   {
-    id: 'pers5',
+    id: 'pers6',
     title: "Hospital Management System",
     description: "Python-based employee management, appointment scheduling and transaction service.",
     tags: ["Python", "Management System"],
