@@ -33,49 +33,38 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
 );
 
 export const Projects: React.FC = () => {
-  const professionalProjects = PROJECTS.filter(p => p.category === 'professional');
+  const combinedProjects = [
+    ...PROJECTS.filter(p => p.category === 'professional'),
+    ...PROJECTS.filter(p => p.category === 'personal'),
+  ];
   const researchProjects = PROJECTS.filter(p => p.category === 'research');
-  const personalProjects = PROJECTS.filter(p => p.category === 'personal');
 
   return (
     <section id={SectionId.PROJECTS} className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <span className="text-sm font-bold tracking-widest text-neutral-400 uppercase mb-16 block">Selected Work</span>
         
-        {/* Professional */}
+        {/* Projects */}
         <div className="mb-20">
           <h2 className="text-2xl font-serif text-neutral-900 mb-8 flex items-center gap-4">
-            Professional Projects 
+            Projects
             <span className="h-px bg-neutral-100 flex-grow"></span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {professionalProjects.map(project => (
+            {combinedProjects.map(project => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </div>
 
         {/* Research */}
-        <div className="mb-20">
+        <div>
           <h2 className="text-2xl font-serif text-neutral-900 mb-8 flex items-center gap-4">
             Research & Publications
             <span className="h-px bg-neutral-100 flex-grow"></span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {researchProjects.map(project => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
-        </div>
-
-        {/* Personal */}
-        <div>
-          <h2 className="text-2xl font-serif text-neutral-900 mb-8 flex items-center gap-4">
-            Personal Projects
-            <span className="h-px bg-neutral-100 flex-grow"></span>
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {personalProjects.map(project => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>

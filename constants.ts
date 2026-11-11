@@ -4,8 +4,8 @@ export const PERSONAL_INFO = {
   name: "Abu Darda",
   title: "AI/ML Engineer",
   tagline: "Specialized in Generative AI, RAG Architectures, and Agentic Workflows.",
-  location: "Valley Stream, New York",
-  address: "46 Jedwood Pl, Valley Stream, New York, 11581",
+  location: "Hamtramck, MI",
+  address: "Hamtramck, MIchigan, 48212",
   phone: "+1 (929) 413-9306",
   about: `I am an AI/ML Engineer and MS Candidate in Generative AI at CUNY SPS with professional experience building production-grade LLM applications. Specialized in RAG architectures, Agentic Workflows, Model Fine-Tuning, Prompt Engineering, and Multi-Agent Coordination. I have a proven track record of reducing system latency and deploying scalable AI solutions, bridging the gap between theoretical AI and deployed software products.`,
 };
@@ -119,6 +119,14 @@ export const PROJECTS: Project[] = [
   // Professional
   {
     id: 'pro1',
+    title: "Socratica",
+    description: "An interactive multimodal AI tutor that transforms static textbooks and PDFs into adaptive, voice-guided lessons with real-time Socratic checkpoints. ",
+    tags: [ "Generative AI", "AI agents", "Next.js", "Multimodal AI"],
+    category: 'professional',
+    link: "https://tutor-poc-frontend.vercel.app/"
+  },
+  {
+    id: 'pro2',
     title: "UpendNow",
     description: "A Digital-content and Film-making Co-pilot. It creates film scripts and dialogues based on user criteria, generates AI-based scene images and demo videos.",
     tags: ["Serverless", "Node.js", "AWS", "Generative AI", "LoRA"],
@@ -126,14 +134,14 @@ export const PROJECTS: Project[] = [
     link: "https://www.upendnow.com/"
   },
   {
-    id: 'pro2',
+    id: 'pro3',
     title: "Workflow Automation System",
     description: "A system to classify job descriptions and CVs. Automates document sorting, AI-based reviews, and notifications using AWS Comprehend and Elasticsearch.",
     tags: ["AWS", "FastAPI", "LLMs"],
     category: 'professional'
   },
   {
-    id: 'pro3',
+    id: 'pro4',
     title: "Chatbot - Nikles",
     description: "Context-aware chatbot capable of integrating multiple knowledge sources using LangChain and Pinecone.",
     tags: ["LLMs", "LangChain", "Pinecone"],
@@ -197,23 +205,23 @@ export const PROJECTS: Project[] = [
     tags: ["Django", "Python", "E-commerce"],
     category: 'personal',
     github: "https://github.com/abuudarda/django-ecommerce"
-  },
-  {
-    id: 'pers5',
-    title: "Employee Management System",
-    description: "Java-based employee management system for organizations.",
-    tags: ["Java", "Management System"],
-    category: 'personal',
-    github: "https://github.com/abuudarda/Employee-Management-System"
-  },
-  {
-    id: 'pers6',
-    title: "Hospital Management System",
-    description: "Python-based employee management, appointment scheduling and transaction service.",
-    tags: ["Python", "Management System"],
-    category: 'personal',
-    github: "https://github.com/abuudarda/Hospital-Management-System"
   }
+  // {
+  //   id: 'pers5',
+  //   title: "Employee Management System",
+  //   description: "Java-based employee management system for organizations.",
+  //   tags: ["Java", "Management System"],
+  //   category: 'personal',
+  //   github: "https://github.com/abuudarda/Employee-Management-System"
+  // },
+  // {
+  //   id: 'pers6',
+  //   title: "Hospital Management System",
+  //   description: "Python-based employee management, appointment scheduling and transaction service.",
+  //   tags: ["Python", "Management System"],
+  //   category: 'personal',
+  //   github: "https://github.com/abuudarda/Hospital-Management-System"
+  // }
 ];
 
 export const ACHIEVEMENTS: AchievementItem[] = [
